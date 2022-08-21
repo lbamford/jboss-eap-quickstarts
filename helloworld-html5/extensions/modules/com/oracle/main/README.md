@@ -1,3 +1,2 @@
-**NOTE:** The Oracle JDBC driver is not provided with this example.  [Download the JDBC driver.](http://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html)
 
-Once downloaded, place the ojdbcx.jar file in this directory.  The [module.xml](https://github.com/travisrogers05/eap-oracle-db/blob/master/extensions/modules/com/oracle/main/module.xml#L3) file might need to be updated if the name of the jar file is different.
+Place the ojdbcx.jar file in this directory.  The module.xml file will need to reflect the jar file name.
