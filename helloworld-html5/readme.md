@@ -40,4 +40,15 @@ oc new-app --template=eap74-basic-s2i \
  -p ENABLE_GENERATE_DEFAULT_DATASOURCE=false
  
  
+ oc create configmap settings-mvn --from-file=../base_templates/settings.xml
+ oc delete configmap settings-mvn
+ 
+ Add to build config:
+ 
+ source:
+      configMaps:
+      - configMap:
+          name: settings-mvn
+ 
+ 
  
