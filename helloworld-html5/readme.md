@@ -11,6 +11,7 @@ The following folders are used by the s2i builder process. We instruct the EAP b
 *  *extensions* - contains s2i script to be used when configuring oracle driver, plus module.xml - see https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4/html/getting_started_with_jboss_eap_for_openshift_container_platform/configuring_eap_openshift_image#S2I-Artifacts
 
 
+*Log showing loaded driver and deployed .war from deployments folder*
 <pre>
 [0m[0m21:40:38,326 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.2.12.Final-redhat-00001 starting
 [0m[0m21:40:38,328 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 42) WFLYJCA0004: Deploying JDBC-compliant driver class oracle.jdbc.OracleDriver (version 11.2)
