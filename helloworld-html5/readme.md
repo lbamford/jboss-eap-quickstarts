@@ -40,16 +40,7 @@ oc new-app --template=eap74-basic-s2i \
  -p ENABLE_GENERATE_DEFAULT_DATASOURCE=false
  
  
- oc new-app --template=eap74-basic-s2i \
--p APPLICATION_NAME=lb-eap-app \
--p EAP_IMAGE_NAME=jboss-eap74-openjdk11-openshift:7.4.0 \
--p EAP_RUNTIME_IMAGE_NAME=jboss-eap74-openjdk11-runtime-openshift:7.4.0 \
--p SOURCE_REPOSITORY_URL=https://agsgit.scotland.gov.uk/md/eap-quickstarts.git \
--p SOURCE_REPOSITORY_REF=lb-master \
--p CONTEXT_DIR=kitchensink \
--p ENABLE_GENERATE_DEFAULT_DATASOURCE=false \
---build-env MAVEN_OPTS='-Denforcer.skip=true' \
---build-env GIT_SSL_NO_VERIFY='true'
+ 
  
  ------------------------------------
  tackling issues with OCP build 
