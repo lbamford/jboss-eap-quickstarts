@@ -1,4 +1,4 @@
-## EAP Server with oracle driver and app deployment
+## EAP Server with oracle driver and multiple war deployments
 
 The following folders are used by the s2i builder process. We instruct the EAP build to add oracle driver and deploy multiple war files by configuring the contents.
 
