@@ -45,7 +45,7 @@ oc new-app --template=eap74-basic-s2i \
  
  ----------------------------------------------
  
- *To override settings.xml for build*
+ **To override settings.xml for build
  
  oc create configmap settings-mvn --from-file=../base_templates/settings.xml
  
