@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# ADD CUSTOM CURL FOR ARTIFACTS HERE.
+if [ "${SCRIPT_DEBUG}" = "true" ] ; then
+    set -x
+    echo "Script debugging is enabled, allowing bash commands and their arguments to be printed as they are executed"
+fi
+
+# ADD CUSTOM CURL FOR ARTIFACTS HERE MAYBE?
 
 # source import_artifacts.sh
 
 # THEN CONTINUE...
 
-
-if [ "${SCRIPT_DEBUG}" = "true" ] ; then
-    set -x
-    echo "Script debugging is enabled, allowing bash commands and their arguments to be printed as they are executed"
-fi
 
 injected_dir=$1
 source /usr/local/s2i/install-common.sh
