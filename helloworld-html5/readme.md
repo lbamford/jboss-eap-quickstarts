@@ -54,8 +54,11 @@ oc new-app --template=eap74-basic-s2i \
  Add to build config:
  
  source:
+ 
       configMaps:
+      
       - configMap:
+      
           name: settings-mvn
  
  
