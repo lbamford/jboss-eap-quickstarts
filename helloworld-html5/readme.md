@@ -43,21 +43,6 @@ oc new-app --template=eap74-basic-s2i \
  
  
  
- ----------------------------------------------
- 
- **To override settings.xml for build**
- 
- oc create configmap settings-mvn --from-file=../base_templates/settings.xml
- 
- oc delete configmap settings-mvn
- 
- Add to build config:
- 
- <pre>
- source:
-       configMaps:
-      - configMap:
-          name: settings-mvn
- </pre>
+
  
  
