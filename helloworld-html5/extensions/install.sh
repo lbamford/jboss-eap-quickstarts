@@ -7,7 +7,7 @@ fi
 
 # ADD CUSTOM CURL FOR ARTIFACTS HERE MAYBE?
 echo "XXXXX I'M HERE XXXX "
-source import_artifacts.sh
+source /tmp/src/extensions/import_artifacts.sh
 
 # THEN CONTINUE...
 
