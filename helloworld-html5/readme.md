@@ -42,6 +42,7 @@ oc new-app --template=eap74-basic-s2i \
  
  
  
+ curl -u "user:password" -X GET https://myartifactory.jfrog.io/artifactory/maven-local/com/test/jfrog/test-test.ear -H 'Content-Type:application/json' -o test.ear
  
 
  
