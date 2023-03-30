@@ -6,8 +6,13 @@ if [ "${SCRIPT_DEBUG}" = "true" ] ; then
 fi
 
 # ADD CUSTOM CURL FOR ARTIFACTS HERE MAYBE?
-echo "XXXXX I'M HERE XXXX "
-source /tmp/src/extensions/import_artifacts.sh
+echo "XXXXX COPY FROM REMOTE REPO TO DEPLOYMENTS XXXX "
+# Picks up WAR_FILE_URL(S) from buildConfig
+echo ${WAR_FILE_URL}
+echo ${WAR_FILE_NAME}
+
+curl -o /tmp/src/${WAR_FILE_NAME} -O ${WAR_FILE_URL}
+
 
 # THEN CONTINUE...
 
