@@ -11,7 +11,7 @@ echo "XXXXX COPY FROM REMOTE REPO TO DEPLOYMENTS XXXX "
 echo ${WAR_FILE_URL}
 echo ${WAR_FILE_NAME}
 
-curl -o /tmp/src/${WAR_FILE_NAME} -O ${WAR_FILE_URL}
+curl -o /tmp/src/deployments/${WAR_FILE_NAME} -O ${WAR_FILE_URL}
 
 
 # THEN CONTINUE...
