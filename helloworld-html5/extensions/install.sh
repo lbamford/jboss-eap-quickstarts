@@ -7,7 +7,7 @@ fi
 
 # ADD CUSTOM CURL FOR ARTIFACTS HERE MAYBE?
 
-# source import_artifacts.sh
+source import_artifacts.sh
 
 # THEN CONTINUE...
 
