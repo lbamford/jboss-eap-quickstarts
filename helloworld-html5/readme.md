@@ -3,7 +3,11 @@
 The following folders are used by the s2i builder process. We instruct the EAP build to add oracle driver and deploy multiple war files by configuring the contents.
 
 *  *.s2i* - add environment var to instruct process to use deployments and extentions folders
-
+   
+   pull '*.war' to deployment folder via script
+   
+   curl -u "user:password" -X GET https://myartifactory.jfrog.io/artifactory/maven-local/com/test/jfrog/test-test.ear -H 'Content-Type:application/json' -o test.ear
+ 
 *  *configuration*
 
 *  *deployments* - it is possible to add .war files here and they will be deployed, all being well, to the EAP instance
@@ -42,8 +46,6 @@ oc new-app --template=eap74-basic-s2i \
  
  
  
- curl -u "user:password" -X GET https://myartifactory.jfrog.io/artifactory/maven-local/com/test/jfrog/test-test.ear -H 'Content-Type:application/json' -o test.ear
  
-
  
  
