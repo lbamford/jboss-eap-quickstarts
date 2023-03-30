@@ -6,7 +6,7 @@ if [ "${SCRIPT_DEBUG}" = "true" ] ; then
 fi
 
 # ADD CUSTOM CURL FOR ARTIFACTS HERE MAYBE?
-
+echo "XXXXX I'M HERE XXXX "
 source import_artifacts.sh
 
 # THEN CONTINUE...
