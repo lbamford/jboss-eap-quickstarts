@@ -1,1 +1,1 @@
-CUSTOM_INSTALL_DIRECTORIES=extensions,deployments
+CUSTOM_INSTALL_DIRECTORIES=extensions,deployments,empty
