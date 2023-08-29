@@ -6,7 +6,7 @@ rc=$?
 if [ $rc -eq 0 ]; then
     # adding Vault related actions
     echo "adding Vault links...."
-    ln -s /etc/vault/system.propertiesx /extensions/
+    ln -s /etc/vault/system.propertiesx /opt/eap/standalone/configuration
     echo "...done!"
 else
     echo "Error: assemble failed!"
